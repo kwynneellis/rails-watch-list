@@ -1,0 +1,6 @@
+<h3>Movie lists</h3>
+<ul class="list-unstyled">
+<% @lists.each do |list| %>
+  <li><%= link_to list.name, list_path(list), class: "text-decoration-none" %></li>
+<% end %>
+</ul>
